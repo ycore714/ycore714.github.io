@@ -1,143 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hans">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Archives | Just a Notebook of Kjarni.y</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="杨核心">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
-  <script id="hexo-configurations">
-  var CONFIG = {
-    root: '/',
-    theme: 'lx',
-    version: '0.0.0',
-    localsearch:{
-      "enable": true,
-      "trigger": "auto",
-      "top_n_per_article": 1,
-      "unescape": false,
-      "preload": false
-      },
-    path: 'search.xml'
-  };
-</script>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/css/main.css">
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/jquery.jside.menu.js"></script>
-	<script>
-	$(document).ready(function(){
-	$(".menu-container").jSideMenu({
-	    jSidePosition: "position-right",
-	    jSideSticky: true,
-	    jSideSkin: "black-grey",
-	     });
-	}); 
-	</script>
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300|Noto+Serif+SC&amp;display=swap">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+    <meta name="author" content="杨核心">
+
+
+
+
+
+<title>Archives: 2020 | Just a Notebook of Kjarni.y</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
 <meta name="generator" content="Hexo 4.2.0"></head>
 <body>
-<div id="page">
-<div id="lx-aside" style="background-image: url(/images/cover.jpg)">
-  <div class="overlay">
-  <div class="featured">
-    <div class="avatar"><a href="/"><img src="/images/myself.jpg"></a></div>
-    <span>杨核心</span>
-    <h2>Just a Notebook of Kjarni.y</h2>
-    <span>——</span>
-    <div class="social-links">
-<a href="https://github.com/ycore714" target="_blank"><i class="fa fa-github fa-fw"></i></a><a href="mailto:ycore714@gmail.com"><i class="fa fa-envelope fa-fw"></i></a><a href="https://instagram.com/kjarni.y" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>
-</div>
-  </div>
-  </div>
-</div>
-<div id="lx-main-content">
-  <div class="lx-post">
-  <h2 class="archive">归档</h2>
-    <div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2020-01-25</span>
-    <h2><a href="/2020/01/25/%E7%94%A8%E6%88%B6%E9%AB%94%E9%A9%97%E8%A6%81%E7%B4%A0/">2020，一个浪漫而又恐慌的开始</a></h2>
-    <p></p></div></div>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Kjarni.y&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
 
-<footer>
-  <div>
-  Copyright &copy; 2019.<a href="/">Just a Notebook of Kjarni.y</a><br>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme <a href="https://lx.blleng.cn" target="_blank">Lx</a><br>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  </div>
-</footer>
-  </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Kjarni.y&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="post-wrap archive">
+    
+    
+        
+
+        
+            <h3>2020</h3>
+        
+
+        <article class="archive-item">
+            <a class="archive-item-link" href="/2020/01/25/%E7%94%A8%E6%88%B6%E9%AB%94%E9%A9%97%E8%A6%81%E7%B4%A0/">2020，一个浪漫而又恐慌的开始</a>
+            <span class="archive-item-date">January 25, 2020</span>
+        </article>
+    
+    
 </div>
-</div>
-<a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i></a>
-<div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="Search..." spellcheck="false"
-             type="text" id="local-search-input">
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 杨核心 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
     </div>
-  </div>
-  <div id="local-search-result"></div>
-</div>
+</footer>
 
-<button class="menu-trigger"></button>
-<div class="menu">
-  <div class="menu-head">
-    <span class="layer">
-      <div class="col">
-        <div class="row for-pic">
-          <div class="profile-pic">
-            <a href="/"><img src="/images/myself.jpg" alt="杨核心"/></a>
-          </div>
-        </div>
-        <div class="row for-name">
-          <p>杨核心</p>
-          <span class="tagline">NSYSU Sociology</span>
-        </div>
-      </div>
-    </span>
-  </div>
-  <nav class="menu-container">
-  <ul class="menu-items">
-    <li><a href="/"><i class="fa fa-home fa-fw"></i>首页</a></li>
-    <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>归档</a></li>
-    <li class="has-sub"><span class="dropdown-heading">
-      <i class="fa fa-bookmark fa-fw"></i>页面</span>
-        <ul>
-          <li><a href="/guestbook">留言</a></li>
-        <li><a href="/about">关于</a></li>
-        </ul>
-    </li>
-    <li class="has-sub"><span class="dropdown-heading">
-      <i class="fa fa-link fa-fw"></i>友链</span>
-        <ul>
-          <li> <a href="https://lx.blleng.cn" target="_blank">Theme-Lx</a></li>
-        </ul>
-    </li>
-  </ul>
-  </nav>
-</div>
-
-<div class="gototop js-top">
-  <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
-</div>
-<script src="/js/jquery.easing.min.js"></script>
-<script src="/js/jquery.waypoints.min.js"></script>
-<script src="/js/jquery.stellar.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/local.search.js"></script>
-
-
+    </div>
 </body>
 </html>
